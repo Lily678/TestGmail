@@ -1,4 +1,4 @@
-package ru.test;
+package ru.test.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-    private WebDriver driver;
     @FindBy(id = "identifierId")
     private WebElement userName;
     @FindBy(className = "RveJvd")
@@ -14,13 +13,15 @@ public class LoginPage {
 
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
-        this.driver = driver;
     }
-    public PasswordPage addLogin () throws InterruptedException {
-        userName.sendKeys("testsofttest2@gmail.com");
-        pass.click();
-        Thread.sleep(2000);
-        return new PasswordPage(driver);
+
+    public WebElement getUserName() {
+        return userName;
     }
+
+    public WebElement getPass() {
+        return pass;
+    }
+
 }
 

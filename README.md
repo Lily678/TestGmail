@@ -13,9 +13,10 @@ Download files:
 2. Chrome Driver [https://sites.google.com/a/chromium.org/chromedriver/downloads]
 3. Allure [https://bintray.com/qameta/generic/allure2]
 If it is a zip file, extract it in the using folder
+4. Should be set environment variable Password 
 
 ## Usage
-You need to create two .bat files
+You need to execute two .bat files (exist in bat directory)
 Start hub:
 
 ```bash
@@ -31,6 +32,9 @@ C:\UsedFolder\allure-commandline-2.10.0\allure-2.10.0\bin
 ## Running Test
 Start two .bat files (start hub and node)
 In console start next command:
-~mvn clean test (execute test)~
-~mvn allure:serve (create html report)~
-~mvn allure:report (create report in default repozitory)~
+
+`mvn clean test (execute test)`
+
+`mvn allure:serve (create html report)`
+
+`mvn allure:report (create report in default repozitory)`

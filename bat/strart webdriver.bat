@@ -1,0 +1,1 @@
+java -Dwebdriver.chrome.driver="D:\Distr\chromedriver_win32\chromedriver.exe" -jar "D:\Distr\selenium-server-standalone-3.141.59.jar" -role node -hub "http://192.168.246.201:4444/grid/register/"
